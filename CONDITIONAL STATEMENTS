@@ -1,1 +1,280 @@
+""" 20-04-2024
+String formatting allows us to create dynamic strings by combining variables and values.
+String formatting is the process of editing strings or adding different iterations to strings.
+String formatting types - (with placeholders), (.format()), (with string literals).
+
+-> With placeholders - %(to inject in strings.
+-> EXAMPLE - S = "My name is %s and I am %d years old" % ('Karthik', 15)
+
+a = "My name is {} and I'm {} years old".format('karthik', 20)
+print(a)
+
+a = "My name is %s and I am %d years old" % ('Karthik', 15)
+print(a)
+
+FORMATTING WITH .format()
+a = "My name is {} and I'm {} years old".format('Karthik', 20)
+print(a)
+
+Controlling the flow of program execution is called flow control statements.
+Flow control statements are classified into 2 types: 1) conditional flow control statement, 2) loop control flow statement.
+
+Conditional flow control statement:
+1) simple if
+2) if else
+3) elif
+4) nested if-elSE         """
+
+"""Simple if: *If condition becomes True, the "if block/True State Block" will get executed, otherwise, it will just go with the flow of program execution.                                        
+
+OR                                                                                                                                                                                                 
+
+*If the given condition becomes True, it will execute in the True state block, and if the given condition is not satisfied, it will just return none."""
+
+"""
+PROGRAM1)                                                                                                                                                                                      WAP TO CHECK THE NUMBER IS ODD(TAKE USER INPUT)                                                                                                                                                    
+num=int(input("Enter the number: "))                                                                                                                                                               
+if num % 2 == 1:                                                                                                                                                                                   
+    print(f'The given number is odd {num}')"""
+
+"""
+PROGRAM2)
+WAP TO CHECK THE NUMBER IS EVEN(TAKE USER INPUT)                                                                                                                                            
+num = int(input("Enter the number: "))                                                                                                                                                             
+if num % 2 == 0:                                                                                                                                                                                   
+    print(f'The given number is even {num}')"""
+
+"""
+PROGRAM3)
+WAP to check if the student has scored 70%, print "good luck" (take user input)                                                                                                                
+score = float(input("Enter the student's score: "))                                                                                                                                                
+if score >= 70:                                                                                                                                                                                    
+    print("Good luck!")"""
+
+"""
+PROGRAM4)
+WAP to check which number is greater using if condition                                                                                                                                         
+a = 98                                                                                                                                                                                             
+b = 67                                                                                                                                                                                             
+if (a - b) > 0:                                                                                                                                                                                    
+    print("a is greater than b")"""
+
+"""
+PROGRAM5)
+WAP to check if the given string has an even length of characters                                                                                                                               
+s = "hey guys you all are osam"                                                                                                                                                                    
+if len(s) % 2 == 0:                                                                                                                                                                                
+    print("The string has even length of characters.")"""
+
+"""
+PROGRAM6)
+WAP to check if the given number is divisible by 5 (take user input)                                                                                                                            
+num = int(input("Enter the number: "))                                                                                                                                                             
+if num % 5 == 0:                                                                                                                                                                                   
+    print("It's divisible by 5.")"""
+
+"""
+PROGRAM7)
+WAP to check if the given programming language is present in the list                                                                                                                           
+p = ["java", "python", "c", "c++", "RUBy", "golang"]                                                                                                                                               
+a = input("Enter the programming language to check: ")                                                                                                                                             
+if a.lower() in p:                                                                                                                                                                                 
+    print("The given programming language is present in the list.")"""
+
+"""
+PROGRAM8)
+WAP to check eligibility to vote (take user input as age)                                                                                                                                       
+age = int(input("Enter the age: "))                                                                                                                                                                
+if age >= 18:                                                                                                                                                                                      
+    print("Eligible to vote.")"""
+
+"""
+PROGRAM9)
+WAP to check if the given string is a palindrome (take user input)                                                                                                                              
+a = input("Enter a string: ")                                                                                                                                                                      
+if a == a[::-1]:                                                                                                                                                                                   
+    print("It's a palindrome.")"""
+
+"""
+PROGRAM10)
+WAP to check if the first letter in the given string is a consonant                                                                                                                             
+s = "lahari is a good student"                                                                                                                                                                     
+if s[0].lower() not in "aeiou":                                                                                                                                                                    
+    print("The first letter in the given string is a consonant.")"""
+
+"""
+PROGRAM11)
+WAP to check if the given string is uppercase or not (take user input)                                                                                                                          
+a = input("Enter a string value: ")                                                                                                                                                                
+if a.isupper():                                                                                                                                                                                    
+    print("It's uppercase.")"""
+
+"""
+PROGRAM12)
+WAP to check if the given value is a string                                                                                                                                                     
+a = input("Enter the value: ")                                                                                                                                                                     
+if isinstance(a, str):                                                                                                                                                                             
+    print("It's a string.")"""
+
+"""
+PROGRAM13)
+WAP to display "Python Coding" if the number is greater than 1 and less than 5                                                                                                                  
+number = int(input("Enter a number: "))                                                                                                                                                            
+if 1 < number < 5:                                                                                                                                                                                 
+    print("Python Coding")"""
+
+"""
+PROGRAM14)
+WAP to check whether the given number is negative and print "it's negative guys"                                                                                                                
+num = int(input("Enter the number: "))                                                                                                                                                             
+if num < 0:                                                                                                                                                                                        
+    print("It's negative guys")"""
+
+"""
+PROGRAM15)
+WAP to check whether the given input is divisible by 2 and 6. If the condition is True, convert the given number to a complex number (take user input)                                          
+a = int(input("Enter a number: "))                                                                                                                                                                 
+if a % 2 == 0 and a % 6 == 0:                                                                                                                                                                      
+    print(complex(a))"""
+
+"""
+PROGRAM16)
+Write a program to check whether the given number is even or not. If even, store the value inside the list                                                                                      
+num = int(input("Enter the number: "))                                                                                                                                                             
+l = []                                                                                                                                                                                             
+if num % 2 == 0:                                                                                                                                                                                   
+    l = [num]                                                                                                                                                                                      
+    print(l)"""
+
+"""
+PROGRAM17)
+WRITE A PROGRAM TO CHECK WHETHER A GIVEN VALUE IS DIISIBLE BY 5 AND 7,IF THE VALUE IS DIVISIBlE THEN DISPLAY THE SQUARE OF THE VALUES(TAKE USER INPUT)                                          
+num=int(input("enter the number"))                                                                                                                                                                 
+if 45<=num<=200 and num%4==0 and num%5==0:                                                                                                                                                         
+    print(chr(num))"""
+
+"""
+PROGRAM18)
+ write a program to checking if a string contains a substring                                                                                                                                
+a= str(input("enter a string")                                                                                                                                                                     
+string="hello world"                                                                                                                                                                               
+sub_string="world"                                                                                                                                                                                 
+
+if sub_string in string:                                                                                                                                                                           
+print("yes its present")                                                                                                                                                                           
+"""
+
+"""
+PROGRAM19)
+finding the maximum value and minimum value in a list                                                                                                                                       
+
+L1=[1,5,3,9,12]                                                                                                                                                                                    
+print(max(l1))                                                                                                                                                                                     
+print(min(l1))                                                                                                                                                                                     
+"""
+
+"""
+PROGRAM20)
+finding the index of the maximum value in a list                                                                                                                                            
+print(max(l))                                                                                                                                                                                      
+b=12.index(max(12))                                                                                                                                                                                
+print(b)                                                                                                                                                                                           
+"""
+
+"""
+PROGRAM21)
+removing duplicates from a list                                                                                                                                                             
+   13=[11,12,1,31,31,"hero","hero"]                                                                                                                                                                
+   print(set(13))"""
+
+"""
+PROGRAM22)
+counting occurrence or an item in a list                                                                                                                                                    
+list=[1,2,3,4,2,2,2,7,8,5]                                                                                                                                                                         
+print(set(list))                                                                                                                                                                                   
+s=14.count(2)                                                                                                                                                                                      
+print(s)"""
+
+"""
+PROGRAM23)
+checking if all elements in a list are unique                                                                                                                                               
+list=[1,2,3,4,5,6]                                                                                                                                                                                 
+print(set(list))                                                                                                                                                                                   
+
+"""
+PROGRAM24)
+
+my_list = [1, 2, 3, 4, 5]
+if len(my_list) == len(set(my_list)):
+    print("All elements in the list are unique.")
+else:
+    print("List contains duplicate elements.")
+"""                                                                                                                                                                                                
+
+"""
+PROGRAM25)
+WAP
+TO
+CHECK
+WHETHER
+A
+CHARACTER
+IS
+IN
+THE
+ALPHABET
+OR
+NOT, IF
+IT
+IS
+A
+ALPHABET
+STORE
+THE
+INSIDE
+A
+DICT(KEY
+VALUE
+AS
+A
+CHARACTER
+AND
+VALUE
+AS
+A
+ASCII
+VALUE
+# Prompting the user to input a character
+char = input("Enter your character: ")
+
+"""
+PROGRAM26)
+Checking if the input is a single character                                                                                                                                                      
+if len(char) == 1:                                                                                                                                                                                 
+    # Checking if the character is an alphabet                                                                                                                                                     
+    if char.isalpha():                                                                                                                                                                             
+        # Creating a dictionary to store the character and its ASCII value                                                                                                                         
+        char_dict = {char: ord(char)}                                                                                                                                                              
+        print("Character is in the alphabet.")                                                                                                                                                     
+        print("Dictionary:", char_dict)                                                                                                                                                            
+    else:                                                                                                                                                                                          
+        print("Character is not in the alphabet.")                                                                                                                                                 
+else:                                                                                                                                                                                              
+    print("Please enter only a single character.")                                                                                                                                                 
+
+                                                                                                                                                                                              """ \
+ \
+ \
+"""
+PROGRAM27)
+wap to check whether a character is in uppercase or not,if uppercase,convert to lower case and store the value inside the dictionary (character as key and ascii as value) take user input   
+a = input("Enter a character")                                                                                                                                                                     
+if a.isupper():                                                                                                                                                                                    
+
+lowercase = a.lower()                                                                                                                                                                              
+print("Lowercase",lowercase)                                                                                                                                                                       
+
+"""
+
+
 
