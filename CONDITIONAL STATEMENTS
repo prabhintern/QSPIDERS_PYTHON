@@ -1,4 +1,4 @@
-""" 20-04-2024
+""" 20-04-2024 
 String formatting allows us to create dynamic strings by combining variables and values.
 String formatting is the process of editing strings or adding different iterations to strings.
 String formatting types - (with placeholders), (.format()), (with string literals).
